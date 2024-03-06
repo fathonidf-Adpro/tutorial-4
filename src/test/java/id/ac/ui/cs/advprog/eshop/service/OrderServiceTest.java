@@ -10,7 +10,7 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
-import enums.OrderStatus;
+import id.ac.ui.cs.advprog.eshop.enums.OrderStatus;
 
 import java.util.ArrayList;
 import java.util.List;
