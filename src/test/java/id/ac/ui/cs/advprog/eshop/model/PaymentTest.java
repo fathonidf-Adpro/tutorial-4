@@ -142,7 +142,7 @@ public class PaymentTest {
     @Test
     void testCreatePaymentCashOnDeliverySuccess() {
         Map<String, String> paymentData = new HashMap<String, String>();
-        paymentData.put("address", "Jalan Anggur");
+        paymentData.put("address", "Jalan Bambu");
         paymentData.put("deliveryFee", "12000");
         Payment payment = new Payment("6c93d3e2-b009-46ba-9d15-f03d85adc2de",
                 "CASH_ON_DELIVERY", paymentData, this.orders.getFirst());
@@ -161,7 +161,7 @@ public class PaymentTest {
     @Test
     void testCreatePaymentCashOnDeliveryRejectedMissingDeliveryFee() {
         Map<String, String> paymentData = new HashMap<String, String>();
-        paymentData.put("address", "Jalan Anggur");
+        paymentData.put("address", "Jalan Bambu");
         Payment payment = new Payment("6c93d3e2-b009-46ba-9d15-f03d85adc2de",
                 "CASH_ON_DELIVERY", paymentData, this.orders.getFirst());
         assertEquals(PaymentStatus.REJECTED.getValue(), payment.getStatus());
@@ -170,7 +170,7 @@ public class PaymentTest {
     @Test
     void testSetStatusPaymentCashOnDeliverySuccess() {
         Map<String, String> paymentData = new HashMap<String, String>();
-        paymentData.put("address", "Jalan Anggur");
+        paymentData.put("address", "Jalan Bambu");
         paymentData.put("deliveryFee", "12000");
         Payment payment = new Payment("6c93d3e2-b009-46ba-9d15-f03d85adc2de",
                 "CASH_ON_DELIVERY", paymentData, this.orders.getFirst());
@@ -181,7 +181,7 @@ public class PaymentTest {
     @Test
     void testSetStatusPaymentCashOnDeliveryRejected() {
         Map<String, String> paymentData = new HashMap<String, String>();
-        paymentData.put("address", "Jalan Anggur");
+        paymentData.put("address", "Jalan Bambu");
         paymentData.put("deliveryFee", "12000");
         Payment payment = new Payment("6c93d3e2-b009-46ba-9d15-f03d85adc2de",
                 "CASH_ON_DELIVERY", paymentData, this.orders.getFirst());
