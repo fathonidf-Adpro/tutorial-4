@@ -4,12 +4,14 @@ import id.ac.ui.cs.advprog.eshop.enums.PaymentStatus;
 
 import lombok.Builder;
 import lombok.Getter;
+import lombok.Setter;
 
 import java.util.Map;
 
 @Builder
 @Getter
 public class Payment {
+    @Setter
     String id;
     String method;
     String status;
