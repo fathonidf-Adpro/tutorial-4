@@ -8,9 +8,9 @@ plugins {
 
 sonar {
   properties {
-    property("sonar.projectKey", "fathonidf-adpro_eshop-tutorial-3")
-    property("sonar.organization", "fathonidf-adpro")
-    property("sonar.host.url", "https://sonarcloud.io")
+	  property("sonar.projectKey", "fathonidf-adpro_tutorial-4-adpro")
+	  property("sonar.organization", "fathonidf-adpro")
+	  property("sonar.host.url", "https://sonarcloud.io")
   }
 }
 
